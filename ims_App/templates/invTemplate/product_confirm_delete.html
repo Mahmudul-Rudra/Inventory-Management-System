@@ -1,0 +1,14 @@
+{% extends 'invTemplate/layout.html' %}
+
+{% block title %} Confirmation of Deletion {% endblock %}
+
+
+
+{% block content %}
+    <h1 class="text-center">Are you sure you want to delete this Product?</h1>
+    <form class="text-center" method='POST'>
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">Yes</button>
+        <a href="{% url 'read' %}" class="btn btn-secondary">Cancel</a>
+    </form>
+{% endblock %}

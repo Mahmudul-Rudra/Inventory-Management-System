@@ -1,0 +1,19 @@
+body{
+    padding-top: 60px;
+}
+
+.navbar{
+    background-color: dimgray;
+}
+
+.navbar-brand, .nav-link{
+    color: #fff !important;
+}
+
+.container{
+    margin-top: 50px;
+}
+
+.table th, table td{
+    vertical-align: middle;
+}
